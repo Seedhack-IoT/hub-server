@@ -6,6 +6,11 @@ var app = express()
         res.send('Hello world!');
     });
 
+    app.post('/', function(req, res){
+        console.log(req.body);
+            res.send('hello world!');
+    });
+
 var server = app.listen(1337, function () {
 
       var host = server.address().address

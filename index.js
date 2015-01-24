@@ -7,7 +7,7 @@ var app = express()
     });
 
     app.post('/', function(req, res){
-        console.log(req.body);
+        console.log(req); //dump whole body
             res.send('hello world!');
     });
 

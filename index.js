@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({extended: false}));
     });
 
     app.post('/', function(req, res){
-        console.log(req); //dump whole body
-            res.send('hello world!');
+        console.log(req.body);    
+        res.send('hello world!');
     });
 
 var server = app.listen(1337, function () {
